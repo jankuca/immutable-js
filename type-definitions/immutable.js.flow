@@ -44,7 +44,7 @@ declare class _Iterable<K, V, KI, II, SI> {
 
   equals(other: Iterable<K,V>): boolean;
   hashCode(): number;
-  get(key: K): V;
+  get(key: K): V|void;
   get<V_>(key: K, notSetValue: V_): V|V_;
   has(key: K): boolean;
   includes(value: V): boolean;
